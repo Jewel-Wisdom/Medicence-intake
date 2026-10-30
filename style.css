@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef4f8;
+    margin: 30px auto;
+    padding: 15px;
+    max-width: 600px;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #174a7e;
+    font-size: 28px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #3275ad;
+}
+
+.form-box,
+.sync-box,
+.list-box {
+    background: white;
+    padding: 20px;
+    border: 1px solid #d5e0e8;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.form-box input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccd8e0;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #91c5e8;
+    border-color: #438fc2;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.form-box button {
+    background: #28a66a;
+}
+
+.form-box button:hover {
+    background: #208452;
+}
+
+.sync-box {
+    text-align: center;
+}
+
+.sync-box button {
+    background: #347fbd;
+}
+
+.sync-box button:hover {
+    background: #245f91;
+}
+
+#status {
+    margin-top: 12px;
+    color: #777;
+    font-size: 13px;
+}
+
+#medicineList {
+    list-style: none;
+    padding: 0;
+}
+
+#medicineList li {
+    background: #edf6fc;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #d1e5f2;
+    border-radius: 9px;
+}
+
+#medicineList li.taken {
+    background: #d9f5df;
+    border-color: #a9dfb5;
+}
+
+.med-name {
+    font-weight: bold;
+    color: #174a7e;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.med-details {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.taken-btn {
+    background: #28a66a;
+}
+
+.taken-btn:hover {
+    background: #208452;
+}
+
+.delete-btn {
+    background: #dc4545;
+}
+
+.delete-btn:hover {
+    background: #b52e2e;
+}
+
+.taken-btn:disabled {
+    background: #8dbb99;
+    cursor: default;
+}
+
+.empty-message {
+    color: #888;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 23px;
+    }
+
+    .form-box,
+    .sync-box,
+    .list-box {
+        padding: 15px;
+    }
+}
